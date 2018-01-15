@@ -1,0 +1,47 @@
+using System;
+    class Program
+    {     
+        static void Main()
+   {
+    // addition subtraction multiplication division using function
+            // now define variable inside main
+
+       int no1, no2;
+       int add, sub, mul;
+       float div;
+            //accept number from user;
+                Console.WriteLine("Enter first number ..");
+                no1 = Convert .ToInt32 (Console.ReadLine());
+
+                Console.WriteLine("Enter second number ..");
+                no2 = Convert.ToInt32(Console.ReadLine());
+            //call function insid main
+                Program.addition(no1, no2, out add, out sub, out mul, out div);
+                Console.WriteLine("\n\n{0}+{1}={2}", no1, no2, add);
+                Console.WriteLine("\n\n{0}-{1}={2}", no1, no2, sub);
+                Console.WriteLine("\n\n{0}*{1}={2}", no1, no2, mul );
+                Console.WriteLine("\n\n{0}/{1}={2}", no1, no2, div );
+                Console.ReadLine();
+
+   }
+
+       // write function here
+
+        public static void addition(int no1, int no2, out int add, out int sub, out int mul, out float div)
+        {
+            add = no1 + no2;// for add
+            sub = no1 - no2;// for sub
+            mul = no1 * no2;// for multiplication
+            div = no1 / no2;// for division
+
+        }
+           
+
+
+
+       
+
+
+        
+    }
+

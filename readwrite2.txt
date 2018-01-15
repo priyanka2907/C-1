@@ -1,0 +1,28 @@
+using System;
+// now we see how works readline & writeline
+    class Program
+    {
+
+        static void Main()
+        {
+
+
+            Console.WriteLine("Enter You Name ?");// here first we display message on console
+
+            string name = Console.ReadLine();// read message from console
+
+            Console.WriteLine("hello {0}", name);// again wrtie messaqge on console.
+            // we pass name string to writeline
+            // writeline function we can pass parameter
+
+        }
+      
+      
+
+    }
+
+    /*
+     Enter You Name ?
+    jon
+    hello jon
+     */

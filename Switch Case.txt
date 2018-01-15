@@ -1,0 +1,47 @@
+using System;
+    class Program
+    {     
+        static void Main()
+        {
+            // if else ladder example
+
+
+            // take any number from user
+            Console.WriteLine("Enter Any Number You Want!");
+
+            int number = int.Parse(Console.ReadLine());
+            // now see swicth case.
+            //see duplicate case 
+            // case may not be duplicate
+            // see case without break
+            // each case should be break 
+            // every switch statement must be terminated
+           switch  (number)
+            {
+                case 0:
+                case 1:// case 0 without break print number 1 message
+                case 2:
+                Console .WriteLine("You Enter Low Number");
+                break ;
+
+                 case 3:
+                 case 4:
+                 case 5:
+                 Console .WriteLine("You Enter Medium Number");
+                 break ;
+
+                default :
+                 Console.WriteLine("You Enter other Number");
+                break ;
+
+
+
+
+            
+            }
+        }
+
+
+        
+    }
+

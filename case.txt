@@ -1,0 +1,56 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        short number = 0;
+        // ... Cases may not be duplicated.
+        switch (number)
+        {
+            case 0:
+            case 0:
+                Console.WriteLine("ZERO");
+                return;
+            case 1:
+                Console.WriteLine("ONE");
+                return;
+        }
+    }
+}
+
+Output
+
+Error 1
+The label 'case 0:' already occurs in this switch statement
+*******************************
+System.Console.WriteLine("Type number and press Return");
+            try
+            {
+                int i = int.Parse(System.Console.ReadLine());
+                switch (i)
+                {
+                    case 0:
+                    case 1:
+                    case 2:
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
+                    case 3:
+                    case 4:
+                    case 5:
+                        {
+                            System.Console.WriteLine("Medium number");
+                            break;
+                        }
+                    default:
+                        {
+                            System.Console.WriteLine("Other number");
+                            break;
+                        }
+                }
+            }
+            catch
+            {
+            }

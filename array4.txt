@@ -1,0 +1,23 @@
+using System;
+    class Program
+    {     
+        static void Main()
+        {//array in c#
+
+            // define array
+
+            int[] array = new int[3];
+
+            // now assign value to array
+
+            array[0] = 101;
+            array[1] = 102;
+            array[2] = 103;
+          //  array[3] = 103;
+            Console.WriteLine(array[0]);
+ 
+
+           
+        }
+    }
+

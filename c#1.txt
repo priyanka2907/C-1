@@ -1,0 +1,35 @@
+using System;
+// here i remove system
+// now we see what is use of system 
+
+
+
+    class Program
+    {
+
+        static void Main1()
+        {
+            // learn c# windows programming
+            // display line 
+
+            Console.WriteLine("Inside Main Function 1");
+
+        }
+        // i have created new function user defien function
+
+        // how i call this main1 function
+        static void Main()
+        {
+            // learn c# windows programming
+            // display line 
+
+            Console.WriteLine("Inside Main Function");
+            // here we call main1 function
+            Main1();
+        }
+        // here we seen default call main function and we call our user define function insde main();
+
+      
+
+    }
+

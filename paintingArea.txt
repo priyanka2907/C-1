@@ -1,0 +1,45 @@
+using System;
+    class Program
+    {     
+        static void Main()
+   {
+     //calculation of room painting requirement
+
+            // define required variables
+       double width, length, wallArea, ceilingArea;
+       string widthString, lengthString;
+       double HEIGHT = 8;
+       Console.WriteLine("Calculation of Romm Paint Requirements:");
+       Console.WriteLine("Enter Room Length:");
+       lengthString = Console.ReadLine();
+
+       length = double.Parse(lengthString);
+
+       Console.WriteLine("Enter Room width:");
+       widthString = Console.ReadLine();
+       width = double.Parse(widthString);// all required data collect from user
+
+            // now calculate area
+
+       wallArea = 2 * (length + width) * HEIGHT;// calculate wall area
+       ceilingArea = length * width;// calculate ceiling area
+            // now display result;
+       Console.WriteLine("The Wall Area is : "+wallArea +" square feet.");
+       Console.WriteLine("The Ceiling Area is:  " + ceilingArea + " square feet");
+
+
+
+
+
+
+   }
+           
+
+
+
+       
+
+
+        
+    }
+
