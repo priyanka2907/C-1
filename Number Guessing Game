@@ -1,0 +1,76 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        //C# Program to Perform a Number Guessing Game,
+
+        // login is that first generate any random number and then compare user number with random number if same the game win 
+        // take one while loop
+
+        while(true){
+        
+        // take random number using user define function
+
+            int random = Newnum(1, 101);// function to generate random number
+
+            int count = 1;
+            while (true)
+            { 
+            
+                // enter number from user
+
+                Console.WriteLine("Enter a number between 1  & 100(0 to Quit):");
+                int input = Convert.ToInt32(Console.ReadLine());
+                if (input == 0)
+                {
+                    return;
+                }// here if 0 quit
+                else if (input < random)
+                {
+                    Console.WriteLine("Low, Try Again.");
+                    ++count;
+                    continue;
+                // here if low number execute this
+                }
+                else if (input > random)
+                {
+
+                    Console.WriteLine("Heigher ,try Again");
+                    ++count;
+                    continue;
+                    // here if heigh number execute this
+                }
+                else {
+
+                    Console.WriteLine("You Guessed it! The Number was {0} !", random);
+                    Console.WriteLine("It took you {0} \n", count, count == 2 ? "try" : "tries");
+                    break;
+
+                    // here same  number execute thisees  see see my code
+
+                    //tu aur kuch nahi kr sakata except printf syllabus hai na (T-T) crying (0_0) bye :Dby
+
+                  
+                }
+            }
+        
+        
+        }
+
+
+
+    }
+
+
+
+    // write function here,..
+
+    static int Newnum(int min, int max)
+    {
+        Random random = new Random();// here we return random generated number
+        return random.Next(min, max);
+
+    
+    }
+}
